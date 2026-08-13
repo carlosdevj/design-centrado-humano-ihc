@@ -14,8 +14,15 @@
   const presentationStatus = document.querySelector('#presentation-status');
   const presentationCounter = document.querySelector('#presentation-counter');
   const slides = [...document.querySelectorAll('.slide-section')];
+  const teamPhoto = document.querySelector('.team-photo img');
+  const photoNote = document.querySelector('.photo-note');
   let fontSize = Number(localStorage.getItem('ihc-font-size')) || 16;
   let currentSlide = 0;
+
+  if (teamPhoto) {
+    teamPhoto.alt = 'Fotografia do trio formado por Carlos Gabriel de Morais Leal, Eric Freitas Sampaio e Larissa dos Passos Costa Ferreira em sala de aula.';
+  }
+  photoNote?.remove();
 
   const applyFont = () => {
     fontSize = Math.min(21, Math.max(13, fontSize));
