@@ -8,11 +8,9 @@ Site acadêmico desenvolvido para a atividade **Aula 03 — Design centrado no h
 - Eric Freitas Sampaio
 - Larissa dos Passos Costa Ferreira
 
-## Antes da entrega: substituir a foto do trio
+## Foto do trio
 
-A imagem atual `assets/foto-trio.svg` é provisória e deve ser substituída por uma **fotografia geral dos três integrantes**.
-
-Recomendação: exporte a foto real em **WebP**, preferencialmente horizontal, entre 1200 × 800 e 1600 × 1000 px. Você pode salvar como `assets/foto-trio.webp` e alterar o `src` no HTML. **Mantenha o atributo `alt` identificando os três integrantes mostrados na fotografia.**
+A fotografia geral dos integrantes já está incluída no projeto e é exibida na capa do site por meio de `assets/foto-trio.svg`, que referencia a imagem otimizada `assets/foto-trio.jpg`.
 
 ## Estrutura
 
@@ -27,11 +25,10 @@ Recomendação: exporte a foto real em **WebP**, preferencialmente horizontal, e
 ├── .github/
 │   └── workflows/
 │       └── deploy-pages.yml
-├── tests/
-│   └── validate_site.py
 └── assets/
     ├── ifrr-logo.svg
-    └── foto-trio.svg
+    ├── foto-trio.svg
+    └── foto-trio.jpg
 ```
 
 ## Conteúdo da atividade
@@ -59,15 +56,7 @@ O site responde às seis questões propostas:
 - layout responsivo;
 - modo apresentação.
 
-## Teste local
-
-Com Python instalado, execute:
-
-```bash
-python tests/validate_site.py
-```
-
-Também é recomendado testar:
+## Testes recomendados
 
 - W3C HTML Validator;
 - WAVE;
@@ -75,37 +64,15 @@ Também é recomendado testar:
 - navegação somente com teclado;
 - diferentes larguras de tela.
 
-## GitHub
-
-Nome do repositório:
+## Repositório
 
 ```text
 design-centrado-humano-ihc
 ```
 
-Para iniciar localmente:
-
-```bash
-git init
-git branch -M main
-git remote add origin https://github.com/carlosdevj/design-centrado-humano-ihc.git
-git add .
-git commit -m "feat: estrutura inicial do trabalho de IHC"
-git push -u origin main
-```
-
-## Divisão sugerida dos commits
-
-Para deixar clara a participação dos três integrantes:
-
-1. **Carlos** — estrutura inicial, capa, introdução e estilos-base.
-2. **Eric** — conteúdo das questões 1, 2 e 3.
-3. **Larissa** — conteúdo das questões 4, 5 e 6.
-4. **Revisão final** — acessibilidade, foto real do trio, referências e teste responsivo.
-
 ## Netlify
 
-O arquivo `netlify.toml` já está configurado para publicar a raiz do repositório.
+O arquivo `netlify.toml` está configurado para publicar a raiz do repositório.
 
 No Netlify:
 
@@ -116,13 +83,9 @@ No Netlify:
 5. não é necessário comando de build;
 6. o diretório de publicação é `.`.
 
-## Publicação no GitHub Pages
+## GitHub Pages
 
-O repositório inclui `.github/workflows/deploy-pages.yml`, que publica o site estático no GitHub Pages a cada push na branch `main`.
-
-Se o Pages ainda não estiver habilitado no repositório, abra **Settings → Pages** e, em **Build and deployment → Source**, selecione **GitHub Actions**. Depois execute novamente o workflow em **Actions → Deploy GitHub Pages**.
-
-A URL esperada é:
+O site também está publicado pelo GitHub Pages a partir da branch `main`.
 
 ```text
 https://carlosdevj.github.io/design-centrado-humano-ihc/
