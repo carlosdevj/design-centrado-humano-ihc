@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Trabalho acadêmico de IHC sobre Design Centrado no Humano, Design Thinking, ISO 9241-210 e integração com métodos ágeis.">
+  <meta name="theme-color" content="#064e3b">
+  <title>Design Centrado no Humano em IHC | IFRR</title>
+  <link rel="icon" href="assets/ifrr-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <noscript><div class="noscript" role="status">O conteúdo continua disponível, mas os controles interativos exigem JavaScript.</div></noscript>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#capa" aria-label="Voltar à capa">
+        <img src="assets/ifrr-logo.svg" alt="Logotipo do Instituto Federal de Roraima" width="42" height="52">
+        <span><strong>IFRR</strong><small>Campus Boa Vista</small></span>
+      </a>
+      <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="menu-principal">☰ <span>Menu</span></button>
+      <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+        <a href="#foco">Foco</a><a href="#principios">Princípios</a><a href="#design-thinking">Design Thinking</a><a href="#iso">ISO</a><a href="#agil">Ágil</a><a href="#etapas">Etapas</a><a href="#referencias">Referências</a>
+      </nav>
+    </div>
+  </header>
+
+  <aside class="accessibility-toolbar" aria-label="Ferramentas de acessibilidade">
+    <button id="accessibility-toggle" class="accessibility-toggle" type="button" aria-expanded="true" aria-controls="accessibility-tools">Acessibilidade</button>
+    <div id="accessibility-tools" class="accessibility-tools">
+      <button id="font-decrease" type="button" aria-label="Diminuir tamanho do texto">A−</button>
+      <button id="font-reset" type="button" aria-label="Restaurar tamanho do texto">A</button>
+      <button id="font-increase" type="button" aria-label="Aumentar tamanho do texto">A+</button>
+      <button id="contrast-toggle" type="button" aria-pressed="false">◐ Alto contraste</button>
+      <button id="presentation-toggle" type="button" aria-pressed="false">▣ Apresentação</button>
+    </div>
+  </aside>
+
+  <div id="presentation-status" class="presentation-status" aria-live="polite" hidden><span id="presentation-counter">1 / 10</span><span>Use ← → para navegar · Esc para sair</span></div>
+
+  <main id="conteudo">
+    <section id="capa" class="cover slide-section" aria-labelledby="titulo-principal">
+      <div class="cover-grid">
+        <div class="cover-content">
+          <div class="institution"><img src="assets/ifrr-logo.svg" alt="Logotipo do Instituto Federal de Educação, Ciência e Tecnologia de Roraima" width="100" height="124"><p>Instituto Federal de Educação, Ciência e Tecnologia de Roraima</p></div>
+          <p class="eyebrow">Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+          <h1 id="titulo-principal">Design Centrado no Humano em IHC</h1>
+          <p class="subtitle">Ergonomia, fatores humanos e desenvolvimento de tecnologias voltadas às pessoas</p>
+          <dl class="cover-data">
+            <div><dt>Componente curricular</dt><dd>Interação Humano-Computador</dd></div>
+            <div><dt>Professor</dt><dd>Ricardo Jacauna</dd></div>
+            <div><dt>Atividade</dt><dd>Aula 03 — Design centrado no humano em IHC</dd></div>
+          </dl>
+          <p class="location">Boa Vista — Roraima · 2026</p>
+        </div>
+        <div class="team-panel" aria-labelledby="titulo-equipe">
+          <p class="section-kicker">Equipe</p><h2 id="titulo-equipe">Integrantes do trio</h2>
+          <figure class="team-photo"><img src="assets/foto-trio.svg" alt="Fotografia do trio formado por Carlos Gabriel de Morais Leal, Eric Freitas Sampaio e Larissa dos Passos Costa Ferreira. Imagem provisória a ser substituída pela fotografia real do grupo." width="800" height="600"><figcaption>Foto do trio</figcaption></figure>
+          <ul class="team-names"><li>Carlos Gabriel de Morais Leal</li><li>Eric Freitas Sampaio</li><li>Larissa dos Passos Costa Ferreira</li></ul>
+          <p class="photo-note">Substitua <code>assets/foto-trio.svg</code> pela fotografia real do trio antes da entrega.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="introducao" class="slide-section intro" aria-labelledby="titulo-introducao">
+      <div class="section-shell"><p class="section-number">Introdução</p><h2 id="titulo-introducao">Por que colocar o ser humano no centro do projeto?</h2><p class="lead">A Ergonomia e a Engenharia de Fatores Humanos ajudam a compreender como as pessoas percebem, interpretam, memorizam e agem. Em IHC, esse conhecimento orienta tecnologias que se adaptem às pessoas e ao contexto real de uso.</p>
+        <div class="three-columns"><article><span class="badge">1</span><h3>Compreender</h3><p>Investigar usuários, tarefas, objetivos, necessidades, limitações e ambiente.</p></article><article><span class="badge">2</span><h3>Projetar</h3><p>Transformar esse entendimento em requisitos, alternativas e protótipos.</p></article><article><span class="badge">3</span><h3>Avaliar e iterar</h3><p>Testar com usuários e melhorar a solução com base em evidências.</p></article></div>
+      </div>
+    </section>
+
+    <section id="foco" class="slide-section topic" aria-labelledby="titulo-foco"><div class="section-shell"><header class="topic-header"><span class="section-number">01</span><div><p class="topic-tag">Questão 1</p><h2 id="titulo-foco">Qual é o foco principal do design centrado no humano?</h2></div></header><div class="answer-grid"><div><p class="answer-highlight">O foco principal é o <strong>ser humano em situação real de uso</strong>.</p><p>O projeto deve compreender explicitamente usuários, tarefas, objetivos e o ambiente em que o sistema será utilizado. A solução precisa ser útil, utilizável e coerente com necessidades, capacidades e limitações humanas.</p><p>Também devem ser considerados outros stakeholders afetados pelo produto, como clientes, gestores e equipes de suporte.</p></div><div class="human-diagram" role="img" aria-label="Pessoa no centro, cercada por usuários, tarefas, tecnologia e ambiente"><span class="center">Ser humano</span><span>Tarefas</span><span>Usuários</span><span>Tecnologia</span><span>Ambiente</span></div></div><article class="summary-card"><h3>Em uma frase</h3><p>Projetar sistemas para que se ajustem às pessoas e ao contexto de uso, em vez de exigir que as pessoas se adaptem ao sistema.</p></article></div></section>
+
+    <section id="principios" class="slide-section topic" aria-labelledby="titulo-principios"><div class="section-shell"><header class="topic-header"><span class="section-number">02</span><div><p class="topic-tag">Questão 2</p><h2 id="titulo-principios">Quais são os três princípios mencionados na aula?</h2></div></header><p class="lead">A aula apresenta três princípios clássicos que formam um ciclo de entendimento, verificação e melhoria.</p><div class="principles-grid"><article><span class="badge">1</span><h3>Foco inicial nos usuários</h3><p><strong>Foco inicial nos usuários e nas tarefas:</strong> compreender desde cedo quem utilizará o sistema, o que precisa fazer, suas características e o contexto de atuação.</p></article><article><span class="badge">2</span><h3>Medição empírica</h3><p>Avaliar protótipos e soluções observando usuários reais e coletando evidências de desempenho, dificuldades, erros e satisfação.</p></article><article><span class="badge">3</span><h3>Design iterativo</h3><p>Projetar, testar, aprender e corrigir repetidamente. Problemas descobertos na avaliação alimentam novas versões da solução.</p></article></div><aside class="callout"><strong>Distinção importante:</strong> esses são os três princípios destacados na aula. A ISO 9241-210 amplia a abordagem com recomendações sobre envolvimento contínuo, experiência completa e trabalho multidisciplinar.</aside></div></section>
+
+    <section id="design-thinking" class="slide-section topic" aria-labelledby="titulo-dt"><div class="section-shell"><header class="topic-header"><span class="section-number">03</span><div><p class="topic-tag">Questão 3</p><h2 id="titulo-dt">Como o Design Thinking se relaciona com o design centrado no humano?</h2></div></header><div class="two-columns"><article><h3>Design centrado no humano</h3><p>É uma abordagem de projeto que mantém usuários e contexto de uso como referência durante todo o desenvolvimento.</p></article><article><h3>Design Thinking</h3><p>Organiza práticas de empatia, definição do problema, ideação, prototipação e teste para explorar problemas e soluções com foco humano.</p></article></div><div class="relation"><strong>Design Thinking</strong><span>é compatível e pode operacionalizar</span><strong>Design Centrado no Humano</strong></div><p class="lead">Os dois se relacionam pelo foco nas pessoas, pela colaboração, pela experimentação e pela natureza iterativa. O Design Thinking pode ser usado como um conjunto de práticas dentro de um processo maior de design centrado no humano.</p></div></section>
+
+    <section id="iso" class="slide-section topic" aria-labelledby="titulo-iso"><div class="section-shell"><header class="topic-header"><span class="section-number">04</span><div><p class="topic-tag">Questão 4</p><h2 id="titulo-iso">Em qual contexto podemos usar a norma ISO 9241-210?</h2></div></header><div class="iso-layout"><article class="iso-card"><p class="iso-label">ISO 9241-210</p><h3>Design centrado no humano para sistemas interativos</h3><p>A norma fornece requisitos e recomendações para aplicar atividades de design centrado no humano ao longo do ciclo de vida de sistemas interativos baseados em computador.</p></article><div class="context-list"><article><strong>Software e aplicações</strong><p>Sistemas web, aplicativos, serviços digitais e sistemas corporativos.</p></article><article><strong>Hardware + software</strong><p>Produtos em que componentes físicos e digitais formam uma única experiência.</p></article><article><strong>Diferentes ciclos de vida</strong><p>Pode ser incorporada a processos tradicionais ou ágeis da organização.</p></article></div></div><aside class="callout"><strong>Referência atual:</strong> a edição internacional vigente utilizada como referência é a ISO 9241-210:2019.</aside></div></section>
+
+    <section id="agil" class="slide-section topic" aria-labelledby="titulo-agil"><div class="section-shell"><header class="topic-header"><span class="section-number">05</span><div><p class="topic-tag">Questão 5</p><h2 id="titulo-agil">Como ocorre a integração do design centrado no humano com métodos ágeis?</h2></div></header><p class="lead">O processo centrado no humano não substitui o método ágil. Pesquisa, design, prototipação e avaliação são incorporados aos ciclos de desenvolvimento.</p><div class="agile-flow"><div><strong>Pesquisa</strong><span>Usuários → necessidades → requisitos</span></div><div><strong>Design</strong><span>Sprint 0 → Sprint 1 → Sprint 2 → refinamento</span></div><div><strong>Desenvolvimento</strong><span>Arquitetura → implementação → feedback → próxima entrega</span></div></div><div class="two-columns compact"><article><h3>Trabalho em paralelo</h3><p>Design e desenvolvimento avançam juntos, compartilhando descobertas e restrições.</p></article><article><h3>Design um passo à frente</h3><p>Na organização mostrada na aula, design tende a preparar e validar a experiência antes de ela entrar na sprint de implementação.</p></article><article><h3>Feedback contínuo</h3><p>O aprendizado com usuários retorna ao backlog e altera prioridades e decisões.</p></article><article><h3>MVP com sentido</h3><p>O produto mínimo viável reduz escopo, mas ainda precisa responder a necessidades reais.</p></article></div></div></section>
+
+    <section id="etapas" class="slide-section topic" aria-labelledby="titulo-etapas"><div class="section-shell"><header class="topic-header"><span class="section-number">06</span><div><p class="topic-tag">Questão 6</p><h2 id="titulo-etapas">Quais são as etapas de elaboração de um projeto centrado no usuário?</h2></div></header><ol class="stage-list"><li><span class="stage-number">1</span><article><p class="stage-tag">Analisar</p><h3>Análise da situação atual</h3><p>Identificar stakeholders, usuários, objetivos, tarefas, dificuldades, ambiente, artefatos existentes, limitações e soluções concorrentes.</p></article></li><li><span class="stage-number">2</span><article><p class="stage-tag">Criar</p><h3>Produção de uma solução</h3><p>Especificar requisitos e metas de usabilidade, gerar alternativas, aplicar princípios de design e construir protótipos envolvendo usuários.</p></article></li><li><span class="stage-number">3</span><article><p class="stage-tag">Avaliar</p><h3>Avaliação da intervenção</h3><p>Testar a solução, comparar resultados com requisitos, corrigir problemas e continuar acompanhando o produto após o lançamento.</p></article></li></ol><div class="iteration-box"><strong>O processo é iterativo.</strong><p>Se a avaliação mostrar que os requisitos não foram atendidos, a equipe retorna às etapas anteriores.</p><div aria-hidden="true">Analisar → Projetar → Avaliar ↺</div></div></div></section>
+
+    <section id="conclusao" class="slide-section conclusion" aria-labelledby="titulo-conclusao"><div class="section-shell"><p class="section-number">Síntese</p><h2 id="titulo-conclusao">Tecnologia centrada no humano é tecnologia projetada com evidências sobre pessoas</h2><div class="conclusion-grid"><article><strong>1</strong><p>Compreender usuários e contexto.</p></article><article><strong>2</strong><p>Prototipar e medir o uso.</p></article><article><strong>3</strong><p>Iterar com base no aprendizado.</p></article><article><strong>4</strong><p>Integrar design e desenvolvimento.</p></article><article><strong>5</strong><p>Considerar a experiência completa.</p></article><article><strong>6</strong><p>Continuar avaliando após o lançamento.</p></article></div><blockquote>O resultado esperado não é somente um sistema que funciona tecnicamente, mas um sistema que faça sentido para as pessoas que dependem dele.</blockquote></div></section>
+
+    <section id="referencias" class="slide-section references" aria-labelledby="titulo-referencias"><div class="section-shell"><p class="section-number">Referências</p><h2 id="titulo-referencias">Fontes utilizadas</h2><ol class="reference-list"><li><strong>UNIVESP.</strong> Interfaces Humano-Computador — Aula 03 — Design centrado no humano. Prof. Lucia Vilela Leite Filgueiras, 2018. <a href="https://www.youtube.com/watch?v=EhvQoOl2Svw" target="_blank" rel="noopener noreferrer">Assistir à videoaula</a>.</li><li><strong>ISO.</strong> ISO 9241-210:2019 — Ergonomics of human-system interaction — Part 210: Human-centred design for interactive systems. <a href="https://www.iso.org/standard/77520.html" target="_blank" rel="noopener noreferrer">Consultar a norma</a>.</li><li><strong>W3C.</strong> Web Content Accessibility Guidelines (WCAG) 2.2. <a href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="noopener noreferrer">Consultar diretrizes</a>.</li></ol></div></section>
+  </main>
+  <footer class="site-footer"><p>Trabalho acadêmico — Interação Humano-Computador · IFRR Campus Boa Vista · 2026</p></footer>
+</body>
+</html>
